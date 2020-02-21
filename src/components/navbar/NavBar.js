@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {NavLink} from 'react-router-dom'
-import './NavBar.css'
+import  navStyle from './NavBar.module.css'
 
 export default function NavBar() {
 
@@ -28,23 +28,23 @@ export default function NavBar() {
     }
 
     return (
-        <nav className="navbar">
-            <div className="logo">
-                <NavLink className="link-item" exact activeStyle={{}} to="/">Vecto Pixel</NavLink>
+        <nav className={navStyle.navbar}>
+            <div className={navStyle.logo}>
+                <NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/">Vecto Pixel</NavLink>
             </div>
-            <a href onClick={handleToggleButtonClick} className="toggle-button">
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
+            <a href="#toggleButton" onClick={handleToggleButtonClick} className={navStyle.toggleButton}>
+                <span className={navStyle.bar}></span>
+                <span className={navStyle.bar}></span>
+                <span className={navStyle.bar}></span>
             </a>
-            <div className="navbar-links" style={toggoleControl}>
+            <div className={navStyle.navbarLinks} style={toggoleControl}>
                 <ul>
-                    <li><NavLink className="link-item" exact activeStyle={{}} to="/">Home</NavLink></li>
-                    <li><NavLink className="link-item" exact activeStyle={{}} to="/about">About</NavLink></li>
-                    <li><NavLink className="link-item" exact activeStyle={{}} to="/contact">Contact</NavLink></li>
-                    <li><NavLink className="link-item" exact activeStyle={{}} to="/crud-firebase">Crud</NavLink></li>
-                    <li><NavLink className="link-item" exact activeStyle={{}} to="/firebase-file-upload">Upload</NavLink></li>
-                    <li><NavLink className="link-item" exact activeStyle={{}} to="/firebase-image-list">Images</NavLink></li>
+                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/">Home</NavLink></li>
+                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/services">Services</NavLink></li>
+                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/contact">Contact</NavLink></li>
+                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/crud-firebase">Crud</NavLink></li>
+                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/firebase-file-upload">Upload</NavLink></li>
+                    <li><NavLink className={navStyle.linkItem} exact activeStyle={{}} to="/firebase-image-list">Images</NavLink></li>
                
                 </ul>
             </div>

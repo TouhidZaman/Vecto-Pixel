@@ -1,0 +1,196 @@
+.social li{
+	display: inline-block;
+    width: auto;
+    float: none;
+}
+.social li a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.social li a:hover {
+    color: #E91E63;
+}
+/*-- footer --*/
+footer {
+    background: #191919;
+}
+footer .social ul li a {
+    font-size: 13px;
+    display: block;
+    color: #666;
+    background: #222;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+     margin: 0;
+}
+.social ul li a:hover {
+    background: #ddd;
+    color: #333;
+}
+.subscribe-grid form {
+    position: relative;
+}
+.subscribe-grid input[type="email"] {
+    display: inline-block;
+    background: transparent;
+    border: solid 2px #333;
+    width: 100%;
+    outline: none;
+    padding: .8em 4em .8em 1em;
+    font-size: 1em;
+    color: #fff;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    box-shadow: none;
+}
+.subscribe-grid button.btn1 {
+    color: #777;
+    border: none;
+    width: 56px;
+    height: 52px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+.footer-grid-middle p,.footer-grid-left p {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 28px;
+}
+.footer-grid-middle h4,.subscribe-grid h4 {
+    font-size: 26px;
+    color: #eee;
+    text-transform: capitalize;
+    margin-bottom: .6em;
+    letter-spacing: 1px;
+}
+.footer-grid-left a {
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.footer-grid-left a i{
+	color: #E91E63;
+}
+.copyright p {
+    font-size: 15px;
+    color: #555;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.copyright p a{
+    color: #999;
+}
+.copyright p a:hover {
+    color: #e91e63;
+}
+/*-- //footer --*/
+
+/* -- Responsive design --*/
+
+@media(max-width: 1440px){
+	
+}
+@media(max-width: 1366px){
+	
+}
+@media(max-width: 1280px){
+	
+}
+@media(max-width: 1080px){
+	
+	.footer-grid-middle p, .footer-grid-left p {
+		font-size: 15px;
+	}
+}
+@media(max-width: 1024px){
+	
+	.footer-grid-middle h4, .subscribe-grid h4 {
+		font-size: 24px;
+	}
+	.footer-grid-left a {
+		font-size: 35px;
+	}
+}
+@media(max-width: 991px){
+	
+	.footer-grid-left a {
+		font-size: 30px;
+	}
+	
+}
+@media(max-width: 900px){
+	
+}
+@media(max-width: 800px){
+	
+}
+@media(max-width: 768px){
+	
+}
+@media(max-width: 736px){
+	
+}
+@media(max-width: 667px){
+	
+}
+@media(max-width: 640px){
+	
+}
+@media(max-width: 600px){
+	.footer-grid-middle h4, .subscribe-grid h4 {
+		font-size: 20px;
+	}
+	
+}
+@media(max-width: 568px){
+	
+	
+
+}
+@media(max-width: 480px){
+	
+	.social li a {
+		font-size: 16px;
+        margin: 0 8px;
+	}
+}
+@media(max-width: 414px){
+	
+	
+}
+@media(max-width: 384px){
+	
+	.footer-grid-left a {
+		font-size: 26px;
+	}
+	
+}
+@media(max-width: 375px){
+	
+	
+}
+@media(max-width: 320px){
+	
+	
+}
+
+@media(max-width: 1440px){
+	
+}
+
+/*-- //Responsive design -- */

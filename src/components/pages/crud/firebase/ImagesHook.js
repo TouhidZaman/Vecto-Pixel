@@ -53,11 +53,13 @@ export default function ImagesHook() {
     return (
         <div>     
              
-            <table>
-                <tr>
-                    <th>Images</th>
-                    <th>Action</th>
-                </tr>
+            <table style={{width: "20%"}}>
+                <thead> 
+                    <tr>
+                        <th>Images</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
                 <tbody>
                     {
                         imagesInfo.map(image =>(

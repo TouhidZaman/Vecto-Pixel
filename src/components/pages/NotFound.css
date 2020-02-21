@@ -1,0 +1,97 @@
+/*-- error page --*/
+.error h2 {
+    font-size: 100px;
+    font-weight: 600;
+}
+.error h3 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.error p {
+    font-size: 15px;
+	color: #888;
+	line-height: 28px;
+	margin:0 10em;
+}
+.error a {
+    font-size: 15px;
+    background: #E91E63;
+    padding: 12px 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+     border-radius: 35px;
+     display: inline-block;
+}
+.error a:hover {
+    background: #333;
+}
+/*-- //error page --*/
+
+
+/* responsive design */
+
+@media(max-width: 991px){
+    .error p {
+		margin: 0 3em;
+	}
+	.error h3 {
+		font-size: 35px;
+		letter-spacing: 2px;
+	}
+}
+
+@media(max-width: 768px){
+	
+	.error h3 {
+		font-size: 32px;
+		letter-spacing: 1px;
+	}
+}
+
+@media(max-width: 640px){
+	.error p {
+		margin: 0 1em;
+	}
+}
+
+@media(max-width: 480px){
+
+	.error a {
+		font-size: 14px;
+		padding: 10px 25px;
+	}
+	.error h2 {
+		font-size: 80px;
+	}
+	.error h3 {
+		font-size: 30px;
+		letter-spacing: 0px;
+	}
+	
+}
+
+@media(max-width: 414px){
+    .error p {
+		margin: 0 0em;
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 375px){
+    .error h3 {
+		font-size: 26px;
+	}
+}
+
+@media(max-width: 320px){
+    .error a {
+		font-size: 13px;
+		padding: 10px 15px;
+	}
+	.error h3 {
+		font-size: 23px;
+		letter-spacing: 0px;
+	}
+}
