@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './Home.css'
 import Carousel from 'react-bootstrap/Carousel'
 import ImageGallery from './ImageGallery';
+import Contact from './Contact'
 
 const ControlledCarousel = () => {
     const [index, setIndex] = useState(0);
@@ -61,6 +62,9 @@ const ControlledCarousel = () => {
 
               {/* Image gallery section  */}
               <ImageGallery></ImageGallery>
+
+              {/* Contact Section  */}
+              <Contact></Contact>
 
       </div>
     );

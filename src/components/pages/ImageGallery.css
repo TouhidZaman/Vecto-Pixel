@@ -8,7 +8,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-family: monospace;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .image-gallery-container p {
     font-size: 20px;
@@ -17,7 +17,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 70%;
     margin: auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .image-gallery {
     /* background-color: teal; */
@@ -46,10 +46,29 @@
     .image-item {
         flex: 0 1 50%; /*flex-grow: 0, flex-shrink: 1 and  each item takes only 50% width */
     }
+    .image-gallery-container p {
+        font-size: 15px;  
+        width: 90%
+    }
+    .image-gallery-heading {
+        font-size: 30px;
+    }
+   
 }
 
 @media all and (max-width: 500px){
     .image-item {
         flex: 0 1 100%; /*flex-grow: 0, flex-shrink: 1 and  each item takes 100% width*/
+    }
+    .image-gallery-container {
+        padding: 20px;
+    }
+    .image-gallery-heading {
+        font-size: 25px;
+    }
+
+    .image-gallery-container p {
+        font-size: 15px;  
+        width: 80%
     }
 }
