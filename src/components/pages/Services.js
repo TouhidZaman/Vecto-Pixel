@@ -16,27 +16,27 @@ const Services = () => {
                         </div>
                         <div className="col-md-4 mt-md-0 mt-5 service-grid1">
                             <i className="fa clr2 fa-camera"></i>
-                            <h4>Photography</h4>
+                            <h4>Photo Editing</h4>
                             <p>Duis fringilla velit ipsum dignissim init ipsum elementum. Curabitur fermentum libero acsit amet consectetur dolor sit. </p>
                         </div>
                         <div className="col-md-4 mt-md-0 mt-5 service-grid1">
                             <i className="fa clr3 fa-images"></i>
-                            <h4>Photo Shoots</h4>
+                            <h4>Banner Desing</h4>
                             <p>Duis fringilla velit ipsum dignissim init ipsum elementum. Curabitur fermentum libero acsit amet consectetur dolor sit. </p>
                         </div>
                         <div className="col-md-4 mt-5 service-grid2 text-center">
                             <i className="fa clr3 fa-images"></i>
-                            <h4>Film Making</h4>
+                            <h4>Logo Design</h4>
                             <p>Duis fringilla velit ipsum dignissim init acd ipsum elementum. Curabitur fermen libero lacsit amet consectetur dolor sit. </p>
                         </div>
                         <div className="col-md-4 mt-5 service-grid2 text-center">
                             <i className="fa clr2 fa-images"></i>
-                            <h4>Wedding Shoots</h4>
+                            <h4>My text</h4>
                             <p>Duis fringilla velit ipsum dignissim init acd ipsum elementum. Curabitur fermen libero lacsit amet consectetur dolor sit. </p>
                         </div>
                         <div className="col-md-4 mt-5 service-grid2 text-center">
                             <i className="fa clr1 fa-images"></i>
-                            <h4>Nature Photography</h4>
+                            <h4>My Text</h4>
                             <p>Duis fringilla velit ipsum dignissim init acd ipsum elementum. Curabitur fermen libero lacsit amet consectetur dolor sit. </p>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ const Services = () => {
                             <div className="item">
                                 <div className="feedback-info">
                                     <div className="feedback-top p-4">
-                                        <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+                                        <p> Hethi kub valo video edit kore </p>
                                     </div>
                                     <div className="feedback-grids">
                                         <div className="feedback-img">
@@ -108,7 +108,7 @@ const Services = () => {
                             <div className="item">
                                 <div className="feedback-info">
                                     <div className="feedback-top p-4">
-                                        <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+                                        <p> hethi kom kore valo kaj kore </p>
                                     </div>
                                     <div className="feedback-grids">
                                         <div className="feedback-img">
@@ -123,7 +123,7 @@ const Services = () => {
                             <div className="item">
                                 <div className="feedback-info">
                                     <div className="feedback-top p-4">
-                                        <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+                                        <p> hethi noakhali thake , noakhali er manus vlo </p>
                                     </div>
                                     <div className="feedback-grids">
                                         <div className="feedback-img">
@@ -138,7 +138,7 @@ const Services = () => {
                             <div className="item">
                                 <div className="feedback-info">
                                     <div className="feedback-top p-4">
-                                        <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+                                        <p> kaj sundor but gejay beshi ektu </p>
                                     </div>
                                     <div className="feedback-grids">
                                         <div className="feedback-img">
@@ -153,7 +153,7 @@ const Services = () => {
                             <div className="item">
                                 <div className="feedback-info">
                                     <div className="feedback-top p-4">
-                                        <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+                                        <p> tara tari kaj delivery kore, eita valo lagse </p>
                                     </div>
                                     <div className="feedback-grids">
                                         <div className="feedback-img">
@@ -168,7 +168,7 @@ const Services = () => {
                             <div className="item">
                                 <div className="feedback-info">
                                     <div className="feedback-top p-4 p-4">
-                                        <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+                                        <p> dhsajdhjas das dah kdha d ja hd kah d dah dkahd jkadh a d hawdhadkah </p>
                                     </div>
                                     <div className="feedback-grids">
                                         <div className="feedback-img">
