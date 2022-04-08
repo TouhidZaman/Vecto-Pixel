@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import classes from "./CustomLink.module.css";
 
 const CustomLink = ({ children, to, activeStyle, ...props }) => {
    const resolved = useResolvedPath(to);

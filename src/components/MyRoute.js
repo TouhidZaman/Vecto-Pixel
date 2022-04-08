@@ -7,6 +7,7 @@ import Services from "./pages/User/Services/Services";
 import About from "./pages/User/About/About";
 import Portfolio from "./pages/User/Portfolio/Portfolio";
 import AdminPage from "./pages/admin/AdminPage";
+import SignUp from "./pages/User/SignUp/SignUp";
 
 export default function MyRoute() {
    return (
@@ -18,6 +19,7 @@ export default function MyRoute() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin" element={<AdminPage />} />
+            <Route path="/sign-up" element={<SignUp />} />
             <Route path="*" element={<NotFound />} />
          </Routes>
       </div>

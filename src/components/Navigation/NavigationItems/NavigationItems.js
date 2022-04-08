@@ -9,6 +9,7 @@ const NavigationItems = () => {
       { id: 3, path: "/portfolio", name: "portfolio" },
       { id: 4, path: "/about", name: "About" },
       { id: 5, path: "/contact", name: "contact" },
+      { id: 6, path: "/sign-up", name: "Sign-Up" },
    ];
 
    return (
