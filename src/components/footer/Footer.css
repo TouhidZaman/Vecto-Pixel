@@ -63,6 +63,7 @@ footer .social ul li a {
 }
 .copyright p a{
     color: #0973b9;
+    text-decoration: none;
 }
 .copyright p a:hover {
     color: #e91e63;

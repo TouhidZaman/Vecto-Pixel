@@ -1,15 +1,27 @@
-import React from 'react';
-import classes from './NavigationItems.module.css';
-import NavigationItem from './NavigationItem/NavigationItem';
+import React from "react";
+import CustomLink from "./CustomLink/CustomLink";
+import classes from "./NavigationItems.module.css";
 
-const navigationItems = (props) => (
-    <ul className={classes.NavigationItems}>
-        <NavigationItem link='/'>Home</NavigationItem>
-        <NavigationItem link="/about">About</NavigationItem>
-        <NavigationItem link="/services">Service</NavigationItem>
-        <NavigationItem link="/portfolio">Portfolio</NavigationItem>
-        <NavigationItem link="/contact">Contact</NavigationItem>
-    </ul>
-)
+const NavigationItems = () => {
+   const redirects = [
+      { id: 1, path: "/", name: "Home" },
+      { id: 2, path: "/services", name: "Service" },
+      { id: 3, path: "/portfolio", name: "portfolio" },
+      { id: 4, path: "/about", name: "About" },
+      { id: 5, path: "/contact", name: "contact" },
+   ];
 
-export default navigationItems;
+   return (
+      <ul className={classes.NavigationItems}>
+         {redirects.map((redirect) => (
+            <li className={classes.NavigationItem} key={redirect.id}>
+               <CustomLink to={redirect.path} activeStyle={classes.activeStyle}>
+                  {redirect.name}
+               </CustomLink>
+            </li>
+         ))}
+      </ul>
+   );
+};
+
+export default NavigationItems;

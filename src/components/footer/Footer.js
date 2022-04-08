@@ -30,7 +30,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="copyright mt-5">
-                    <p className="text-center">© 2020 Vecto Pixel | Developed by <a href="http://github.com/Touhid-CSE"> Think Diffrent </a></p>
+                    <p className="text-center">© 2022 Vecto Pixel | Developed by <a target="_blank" href="http://github.com/TouhidZaman" rel="noreferrer"> Think Diffrent </a></p>
                 </div>
             </div>
         </footer>

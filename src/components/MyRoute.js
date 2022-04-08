@@ -18,7 +18,7 @@ export default function MyRoute() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin" element={<AdminPage />} />
-            <Route element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
          </Routes>
       </div>
    );
