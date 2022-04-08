@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './NavigationItem.module.css';
-import {NavLink} from 'react-router-dom';
+import CustomLink from '../../../navbar/CustomLink/CustomLink';
 
 const navigationItem = (props) => {
     let activeStyle = {
@@ -11,10 +11,9 @@ const navigationItem = (props) => {
 
     return (
         <li className={classes.NavigationItem}>
-            {/* <a href={props.link} className={props.active ? classes.active : null}>{props.children}</a> */}
-            <NavLink exact activeStyle={activeStyle} to={props.link}>
+            <CustomLink activeStyle={activeStyle} to={props.link}>
                 {props.children}
-            </NavLink>
+            </CustomLink>
         </li>
     )
 }
