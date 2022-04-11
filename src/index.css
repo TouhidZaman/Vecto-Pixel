@@ -11,3 +11,32 @@ body {
    font-family: "Lato", sans-serif;
    /* background-color: #cecece62; */
 }
+
+body a {
+   text-decoration: none;
+   transition: 0.5s all;
+   -webkit-transition: 0.5s all;
+   -moz-transition: 0.5s all;
+   -o-transition: 0.5s all;
+   -ms-transition: 0.5s all;
+   /* font-family: 'PT Sans Caption', sans-serif; */
+   font-family: "Lato", sans-serif;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"] {
+   transition: 0.5s all;
+   -webkit-transition: 0.5s all;
+   -moz-transition: 0.5s all;
+   -o-transition: 0.5s all;
+   -ms-transition: 0.5s all;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
