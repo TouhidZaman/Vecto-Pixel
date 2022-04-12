@@ -1,18 +1,20 @@
-import { signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import app from "../../../../firebase.init";
 import React, { useState } from "react";
-import classes from "./SignUp.module.css";
 import { Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
+const auth = getAuth(app);
+
 const SignUp = () => {
    const [user, setUser] = useState({});
+   const [email, setEmail] = useState("");
+   const [password, setPassword] = useState("");
    const [validated, setValidated] = useState(false);
 
    const provider = new GoogleAuthProvider();
-   const auth = getAuth(app);
 
    //Getting user from google database
    const handleGoogleSignUp = () => {
@@ -33,38 +35,53 @@ const SignUp = () => {
    //handleFacebookSignUp
    const handleGitHubSignUp = () => alert("github sign-up is not set yet");
 
-   //Removing logged user
-   const handleGoogleSignOut = () => {
-      signOut(auth)
-         .then(() => {
-            setUser({});
-         })
-         .catch((error) => {
-            setUser({});
-         });
+
+   //Getting user email from email input
+   const handleEmailInput = (event) => {
+      console.log(event.target.value);
+      setEmail(event.target.value);
+   };
+
+   //Getting user password from password input
+   const handlePasswordInput = (event) => {
+      console.log(event.target.value);
+      setPassword(event.target.value);
    };
 
    //Handling Form submit
    const handleFormSubmit = (event) => {
       const form = event.currentTarget;
+      event.preventDefault();
       if (form.checkValidity() === false) {
-         event.preventDefault();
          event.stopPropagation();
+      } else {
+         createUserWithEmailAndPassword(auth, email, password)
+            .then((result) => {
+               // Signed in
+               const userInfo = result.user;
+               console.log(userInfo);
+               setUser(userInfo);
+            })
+            .catch((error) => {
+               const errorMessage = error.message;
+               console.error("error: ", errorMessage);
+            });
       }
-
       setValidated(true);
-      console.log("form submitted");
+      // console.log("form submitted");
    };
 
+
+
    return (
-      <div className={` ` + classes.SignUp}>
-         <div className="shadow rounded p-5 w-50 mx-auto">
+      <section id="sign-up" className={`container py-3 p-md-5`}>
+         <div className="shadow rounded p-4 p-md-5 col-12 col-md-8 col-lg-6 mx-auto">
             <h2 className="mb-4 text-center">Please Sign-Up !!!</h2>
             <div className="social-media-signup">
                <h5 className="my-4 text-secondary">
                   Choose one of the following sign-up methods
                </h5>
-               <div className="d-md-flex justify-content-between">
+               <div className="d-flex flex-column flex-md-row justify-content-between">
                   <button
                      className="btn btn-lite shadow-sm px-3 py-2 rounded-pill fw-bold text-primary"
                      onClick={handleGoogleSignUp}
@@ -73,7 +90,7 @@ const SignUp = () => {
                      Google
                   </button>
                   <button
-                     className="btn btn-lite shadow-sm px-3 py-2 rounded-pill fw-bold text-primary"
+                     className="btn btn-lite shadow-sm my-3 my-md-0 px-3 py-2 rounded-pill fw-bold text-primary"
                      onClick={handleFacebookSignUp}
                   >
                      <FontAwesomeIcon className="me-2" icon={faFacebook} size="lg" />
@@ -94,16 +111,20 @@ const SignUp = () => {
                <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
                      <Form.Control
+                        onBlur={handleEmailInput}
                         required
                         className="rounded-pill py-2 shadow-sm"
                         type="email"
                         placeholder="Enter your email"
                      />
-                     <Form.Control.Feedback  type="invalid" className="ps-2">Email is required!</Form.Control.Feedback>
+                     <Form.Control.Feedback type="invalid" className="ps-2">
+                        Email is required!
+                     </Form.Control.Feedback>
                   </Form.Group>
 
                   <Form.Group className="mb-3" controlId="formBasicPassword">
                      <Form.Control
+                        onBlur={handlePasswordInput}
                         required
                         className="rounded-pill py-2 shadow-sm"
                         type="password"
@@ -118,7 +139,7 @@ const SignUp = () => {
                   </Form.Group>
                   <Button
                      variant="primary"
-                     className="px-5 fw-bold rounded-pill shadow-sm"
+                     className="px-5 fw-bold rounded-pill shadow-sm col-12"
                      type="submit"
                   >
                      Sign-Up
@@ -126,7 +147,7 @@ const SignUp = () => {
                </Form>
             </div>
          </div>
-      </div>
+      </section>
    );
 };
 

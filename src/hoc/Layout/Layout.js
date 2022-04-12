@@ -22,7 +22,6 @@ class Layout extends Component {
     render () {
         return (
             <JsxWrapper>
-                {/* <NavBar></NavBar> */}
                 <Toolbar toggleSideDrawer={this.sideDrawerToggleHandler}/>
                 <SideDrawer 
                     open={this.state.showSideDrawer} 
